@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface DownloadOperation : NSOperation
 
+
+
++ (instancetype)downloadWithURLString:(NSString *)URLString finishedBlock:(void(^)(UIImage *))finishedBlock;
+
+
 @end
+
+
+
+
+
+
+
